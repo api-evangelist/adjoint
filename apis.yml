@@ -1,7 +1,27 @@
 aid: adjoint
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/adjoint.png
 name: Adjoint
-description: Adjoint is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Adjoint Inc. is a Boston, Massachusetts fintech (founded 2016) that built distributed-ledger
+  and smart-contract software for corporate treasury and insurance. Its flagship platform, Uplink,
+  let financial firms onboard assets onto a permissioned ledger, manage balances, and author
+  self-executing agreements in Adjoint's Financial Core Language (FCL), with SDKs to bridge to
+  traditional systems. The company raised roughly $10.4M and competed with Kyriba, Trovata, and
+  Modern Treasury. As of this enrichment pass the company appears dormant: its adjoint.io domain
+  now resolves to a parked/expired Namecheap page, its GitHub organization returns 404, and no
+  first-party client SDKs are published to public registries. This profile is a VC-portfolio
+  enrichment stub; see the data-quality note below regarding the originally-attached website.
 url: https://raw.githubusercontent.com/api-evangelist/adjoint/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +29,26 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct-candidate
+x-enrichment-note: >-
+  Enrichment 2026-07-17 found no live developer surface. adjoint.io is now a parked/expired domain,
+  the GitHub org (adjoint-io) 404s, and no first-party packages exist on npm/PyPI. No OpenAPI or
+  other API specs available, so no artifacts could be searched, generated, or derived without
+  fabrication. The stub's original Website pointer (https://boostable.com) is a MISMATCH: boostable.com
+  belongs to Boostable, a separate San Francisco advertising company (a genuine 500 Global portfolio
+  company, acqui-hired 2016) and not to Adjoint. Corrected the Website to adjoint.io, the company's
+  own historical domain. The 500-global backing attribution for Adjoint (vs. Boostable) could not be
+  independently verified and may be an artifact of the portfolio scrape.
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Financial Services
+- Treasury
+- Distributed Ledger
+- Smart Contracts
+- Fintech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +57,9 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://boostable.com
+  url: https://www.adjoint.io/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
