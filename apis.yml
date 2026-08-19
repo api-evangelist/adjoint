@@ -39,7 +39,7 @@ x-enrichment-note: >-
   company, acqui-hired 2016) and not to Adjoint. Corrected the Website to adjoint.io, the company's
   own historical domain. The 500-global backing attribution for Adjoint (vs. Boostable) could not be
   independently verified and may be an artifact of the portfolio scrape.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
