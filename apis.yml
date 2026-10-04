@@ -57,7 +57,7 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-- Financial-Services
+- Financial Services
 - Treasury
 - Distributed Ledger
 - Smart Contracts
@@ -69,6 +69,7 @@ tags_raw:
 - Distributed Ledger
 - Smart Contracts
 - Fintech
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
